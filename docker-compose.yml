@@ -1,0 +1,22 @@
+
+services:
+  db:
+    image: postgres:16
+    container_name: cyber-defence-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cyber_defence
+      POSTGRES_USER: cyber_app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local_dev_password_change_me}
+    ports:
+      - "5432:5432"
+    volumes:
+      - cyber_defence_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cyber_app -d cyber_defence"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  cyber_defence_pgdata:

@@ -1,0 +1,65 @@
+.venv/\n__pycache__/\n.pytest_cache/\n.env\nnode_modules/\ndist/\n
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+backend/.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+
+# Network capture files and datasets
+*.pcap
+*.pcapng
+*.cap
+*.pcap.zip
+2020-12-03-traffic-analysis-quiz-alerts/
+2020-12-31-traffic-analysis-quiz-6-pcaps/
+
+# Large installers and archives
+*.exe
+*.msi
+*.zip
+
+# Application logs
+*.log
+
+# Test cache
+.pytest_cache/
+# Backup files
+*.bak
+*.backup
+*.module7-backup
+*.step1-backup
+
+# Generated TypeScript files
+*.tsbuildinfo
+
+# Generated audit reports
+frontend/npm-audit.json
+*.step2-backup
