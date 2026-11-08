@@ -7,3 +7,4 @@ SQLAlchemy
 psycopg[binary]
 PyJWT
 pwdlib[argon2]
+scapy
