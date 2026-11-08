@@ -11,3 +11,4 @@ scapy
 numpy
 pandas
 scikit-learn
+slowapi
