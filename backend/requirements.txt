@@ -10,3 +10,4 @@ pwdlib[argon2]
 scapy
 numpy
 pandas
+scikit-learn
