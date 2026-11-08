@@ -218,7 +218,7 @@ type InvestigationResponse<T> = {
   count: number;
   items: T[];
 };
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://ai-powered-cyber-defence-platform.onrender.com";
 
 const fieldStyle = {
   width: "100%",
@@ -444,7 +444,7 @@ async function handleDeleteUser(userId: number) {
       return;
     }
 
-    apiFetch("http://127.0.0.1:8000/api/v1/auth/me")
+    apiFetch("http://ai-powered-cyber-defence-platform.onrender.com/api/v1/auth/me")
       .then(async (response) => {
         if (!response.ok) {
           throw new Error("Session expired. Please log in again.");
